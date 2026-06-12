@@ -1,0 +1,30 @@
+# User information
+whoami
+id
+cat /etc/passwd
+
+# Group & user management
+sudo groupadd interns
+sudo groupadd cyberteam
+
+sudo useradd student1
+sudo useradd student2
+sudo useradd student3
+
+sudo usermod -aG interns student1
+sudo usermod -aG interns student2
+sudo usermod -aG cyberteam student3
+
+# File & directory creation
+mkdir CyberSecurity_Project
+cd CyberSecurity_Project
+touch report.txt notes.txt credentials.txt security_policy.txt
+
+# Ownership
+ls -l
+sudo chown student1 report.txt
+
+# Permissions
+chmod 444 security_policy.txt
+chmod 664 security_policy.txt
+chmod 777 security_policy.txt
