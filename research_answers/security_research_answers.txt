@@ -1,0 +1,16 @@
+1. Why are file permissions important in Linux?
+File permissions control exactly who can read, modify, or execute a file. Without them, any user on the system could accidentally or intentionally delete important files, read private data, or run malicious code. Permissions are the first line of defense in securing a Linux system.
+
+2. What happens if a sensitive file is given 777 permissions?
+With 777, every single user on the system — including attackers who have gained any user account — can read, edit, or delete the file. For example, if a password file has 777, any logged-in user can open it and steal credentials. This is considered a critical security misconfiguration.
+
+3. What is the Principle of Least Privilege?
+The Principle of Least Privilege means giving each user only the minimum permissions they need to do their job — nothing more. For example, a web server only needs to read HTML files, not write to them. This limits the damage if an account gets compromised.
+
+4. Why do organizations restrict user access to files and directories?
+Organizations restrict access to:
+
+- Protect sensitive data (passwords, customer info, financial records)
+- Prevent accidental damage (a user can't delete files they can't write to)
+- Meet compliance requirements (laws like GDPR require data to be protected)
+- Limit the impact of breaches — if one account is hacked, the attacker only reaches what that account can access
