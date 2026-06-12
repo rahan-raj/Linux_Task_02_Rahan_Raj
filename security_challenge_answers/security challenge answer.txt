@@ -1,0 +1,7 @@
+- The file " password_backup.txt " should have permission 600 because only the owner should ever be able to access password information. This permission allows the owner to read and write the file while denying access to everyone else.
+
+- The file " public_notice.txt " should have permission 644 because the owner may need to edit the file, while all other users only need permission to read it. This is a common setting for publicly accessible text files.
+
+- The file " system_log.txt " should have permission 640 because the owner (typically root) needs read and write access, members of the administrator group need read access, and all other users should be blocked from viewing the file.
+
+- The file " personal_notes.txt " should have permission 600 because it contains private information intended only for the owner. Group members and other users should not have any access to the file.
