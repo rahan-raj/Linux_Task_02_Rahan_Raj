@@ -1,0 +1,9 @@
+- Permission 755 (rwxr-xr-x) gives the owner full permissions (read, write, and execute), while the group and others have read and execute permissions only. It is commonly used for web server directories and scripts.
+
+- Permission 644 (rw-r--r--) gives the owner read and write permissions, while the group and others have read-only access. It is typically used for configuration files and HTML files.
+
+- Permission 777 (rwxrwxrwx) gives full permissions (read, write, and execute) to the owner, group, and others. It is often used for shared temporary folders, but should be avoided in production environments due to security risks.
+
+- Permission 600 (rw-------) gives the owner read and write permissions only, while the group and others have no access. It is commonly used for SSH private keys and password files.
+
+- Permission 700 (rwx------) gives the owner full permissions (read, write, and execute), while the group and others have no access. It is typically used for private user scripts and sensitive directories.
